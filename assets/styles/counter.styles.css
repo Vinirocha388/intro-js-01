@@ -19,7 +19,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px 5px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -29,23 +29,22 @@ button a {
     text-decoration: none;
 }
 
-input#nome {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+div {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 button#btn {
     background-color: #008CBA;
 }
 
-div {
-    margin: 10px 0;
+p#counter {
+    font-size: 24px;
+    margin: 0 20px;
 }
 
-p#msg {
+p#result {
     font-size: 18px;
     color: #333;
 }
@@ -61,12 +60,16 @@ p#msg {
         font-size: 14px;
     }
 
-    input#nome {
-        width: 100%;
-        font-size: 14px;
+    div {
+        flex-direction: column;
     }
 
-    p#msg {
+    p#counter {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    p#result {
         font-size: 16px;
     }
 }
